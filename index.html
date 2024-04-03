@@ -5,26 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Import Easy Toast CSS -->
+    <link rel="stylesheet" href="./css/easy-toast.css" />
   </head>
   <body>
-    <button class="btn" onclick='showToast("Custom message", "top left", "success")'>👋 Click me!</button>
+    <button class="btn" onclick='easyToast("Toast", "top left", "success")'>👋 Click me!</button>
     <div id="toast"></div>
 
-    <script>
-      function showToast(message, position, type) {
-        const toast = document.getElementById("toast");
-        toast.className = toast.className + " show";
-
-        if (message) toast.innerText = message;
-
-        if (position !== "") toast.className = toast.className + ` ${position}`;
-        if (type !== "") toast.className = toast.className + ` ${type}`;
-
-        setTimeout(function () {
-          toast.className = toast.className.replace(" show", "");
-        }, 3000);
-      }
-    </script>
+    <!-- Import Easy Toast JS -->
+    <script src="./js/easy-toast.js"></script>
   </body>
 </html>
