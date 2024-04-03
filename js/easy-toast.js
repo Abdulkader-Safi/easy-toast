@@ -1,4 +1,4 @@
-function easyToast(message, position, type) {
+function easyToast(message, position, type, duration = 3) {
   const toast = document.getElementById("toast");
   toast.className = toast.className + " show";
 
@@ -9,5 +9,5 @@ function easyToast(message, position, type) {
 
   setTimeout(function () {
     toast.className = toast.className.replace(" show", "");
-  }, 3000);
+  }, duration * 1000);
 }
