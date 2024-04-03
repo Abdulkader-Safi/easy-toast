@@ -2,7 +2,7 @@
 
 > built for project that i use vanilla Javascript or typescript that I do not want to use extra libraries with it
 
-### how to use
+## how to use
 
 > showToast(message, position, type)
 
@@ -25,7 +25,7 @@
 | :----------------------------------: | :------------------------------: |
 | ![Error](./assets/error-worning.png) | ![Warning](./assets/success.png) |
 
-### TODO
+## TODO
 
 - [x] Show Toast
 - [x] Select place to show toast
